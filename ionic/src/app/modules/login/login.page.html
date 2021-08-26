@@ -1,12 +1,19 @@
 <ion-content [fullscreen]="true" class="ion-padding ion-text-center">
     <div class="logo">
-        <img src="">
+        <img src="../../../assets/images/oases_logo.png">
     </div>
-    <ion-item>
+    <span class="login-title">OPEN AVIATION STRATEGIC ENGINEERING SYSTEMS</span>
+    <ion-item class="ion-input" style="margin-top: 25px;">
         <ion-input placeholder="Enter email"></ion-input>
     </ion-item>
-    <ion-item>
-        <ion-input placeholder="Password"></ion-input>
+    <ion-item class="ion-input">
+        <ion-input type="password" placeholder="Password"></ion-input>
     </ion-item>
-    <ion-button (click)="login()" color="dark" expand="block">Login</ion-button>
+    <div class="pass-title-container">
+        <span class="login-title">FORGOT PASSWORD?</span>
+    </div>
+    <ion-button (click)="login()" expand="block">Login</ion-button>
+    <div class="footer-tittle-container">
+        <span class="fotter-title">Don't have an account?</span> <span class="fotter-title contact-us-text">Contact us</span>
+    </div>
 </ion-content>

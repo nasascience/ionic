@@ -1,10 +1,73 @@
+ion-content {
+    --background: linear-gradient(#38014691, #0505a9d1), url('../../../assets/images/LoginBackground_oases.png') 0 0/100% 100% no-repeat;
+}
+
+// 0 0/100% 100% no-repeat
 .logo {
-    margin-top: 20%;
+    margin-top: 25%;
+    height: 130px;
+    margin-bottom: 10px;
     img {
-        height: 200px;
+        height: 100%;
     }
 }
 
 .ion-item {
     border-radius: 5px;
+}
+
+.ion-input {
+    border-radius: 50px;
+    --background: #776d9c52;
+    color: white;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+ion-button {
+    --border-radius: 50px;
+    --color: white;
+    --background: linear-gradient(to right, #f54c5f, #e83c90);
+}
+
+.login-title {
+    color: white;
+    font-size: 0.75em;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+.pass-title-container {
+    text-align: right;
+    margin-bottom: 45px;
+}
+
+.footer-tittle-container {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.fotter-title {
+    color: white;
+    font-size: 0.85em;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+.contact-us-text {
+    margin-left: 7px;
+    color: #f54b63;
+}
+
+
+/* Native Input styling*/
+
+:host .item-interactive.item-has-focus {
+    --highlight-background: #ff000000 !important;
+}
+
+.sc-ion-input-md-h {
+    --padding-top: 3px !important;
 }
